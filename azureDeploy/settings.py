@@ -28,6 +28,10 @@ DEBUG = True
 ALLOWED_HOSTS = []
 # 'realtimechatazure-ayh3e7a2bmh9e2hc.southeastasia-01.azurewebsites.net'
 
+LOGOUT_REDIRECT_URL = '/'
+LOGIN_REDIRECT_URL = '/rooms/'
+LOGIN_URL = '/login/'
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,6 +43,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'channels',
     'core',
+    'room',
 ]
 
 MIDDLEWARE = [
