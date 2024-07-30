@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-v7_i0#ta11htwjhbvazgh!7o(1^a3ae3kz4*o_0acbkprs^+9j
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['realtimechatazure-ayh3e7a2bmh9e2hc.southeastasia-01.azurewebsites.net']
 # 'realtimechatazure-ayh3e7a2bmh9e2hc.southeastasia-01.azurewebsites.net'
 
 LOGOUT_REDIRECT_URL = '/'
