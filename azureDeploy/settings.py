@@ -77,6 +77,12 @@ TEMPLATES = [
 WSGI_APPLICATION = 'azureDeploy.wsgi.application'
 ASGI_APPLICATION = 'azureDeploy.asgi.application'
 
+CHANNEL_LAYERS = {
+    'default' : {
+        'BACKEND' : 'channels.layers.InMemoryChannelLayer'
+    }
+}
+
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases

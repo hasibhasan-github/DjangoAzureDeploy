@@ -6,7 +6,7 @@ SECRET_KEY = os.environ['SECRET']
 
 ALLOWED_HOSTS = [os.environ['WEBSITE_HOSTNAME']]
 
-CSRF_TRUSTED_ORIGINS = ['https://' + os.environ['WEBSITE_HOSTNAME']]
+CSRF_TRUSTED_ORIGINS = ['https://realtimechatazure-ayh3e7a2bmh9e2hc.southeastasia-01.azurewebsites.net']
 DEBUG = False 
 
 
