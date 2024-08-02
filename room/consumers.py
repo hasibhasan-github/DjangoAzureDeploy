@@ -67,7 +67,7 @@ class ChatConsumer(AsyncWebsocketConsumer):
     def save_message(self, username, room, message):
         try:
             user = User.objects.get(username=username)
-            room_instance = Room.objects.get(slug=room)
-            Message.objects.create(user=user, room=room_instance, content=message)
+            room = Room.objects.get(slug=room)
+            Message.objects.create(user=user, room=room, content=message)
         except ObjectDoesNotExist as e:
             logger.error(f"Error saving message: {e}")
