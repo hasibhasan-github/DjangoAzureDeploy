@@ -38,7 +38,7 @@
 <script>
     const roomName = JSON.parse(document.getElementById('json-roomname').textContent);
     const userName = JSON.parse(document.getElementById('json-username').textContent);
-    const socket = new WebSocket('ws://realtimechatazure-ayh3e7a2bmh9e2hc.southeastasia-01.azurewebsites.net/ws/your-endpoint/');
+    const socket = new WebSocket('wss://realtimechatazure-ayh3e7a2bmh9e2hc.southeastasia-01.azurewebsites.net/ws/your-endpoint/');
 
     // const chatSocket = new WebSocket(
     //     'ws://'  // Use 'wss://' if your site uses HTTPS
