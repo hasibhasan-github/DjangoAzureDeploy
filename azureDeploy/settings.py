@@ -81,6 +81,8 @@ TEMPLATES = [
 WSGI_APPLICATION = 'azureDeploy.wsgi.application'
 ASGI_APPLICATION = 'azureDeploy.asgi.application'
 
+ASGI_APPLICATION = 'azureDeploy.routing.application'
+
 CHANNEL_LAYERS = {
     'default' : {
         'BACKEND' : 'channels.layers.InMemoryChannelLayer'
