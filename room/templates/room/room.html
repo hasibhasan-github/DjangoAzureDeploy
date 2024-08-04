@@ -41,7 +41,7 @@
     // const socket = new WebSocket('wss://realtimechatazure-ayh3e7a2bmh9e2hc.southeastasia-01.azurewebsites.net/ws/roomName/');
 
     const chatSocket = new WebSocket(
-        'ws://'  // Use 'wss://' if your site uses HTTPS
+        'wss://'  // Use 'wss://' if your site uses HTTPS
         + window.location.host //'realtimechatazure-ayh3e7a2bmh9e2hc.southeastasia-01.azurewebsites.net'
         + '/ws/' // Ensure this path matches your routing configuration
         + roomName
